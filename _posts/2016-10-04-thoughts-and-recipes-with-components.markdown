@@ -112,6 +112,8 @@ What might `<event-listener>` look like inside?
         }.bind(this))
       }
     });
+    </script>
+</dom-module>
 {% endhighlight %}
 
 Notice that it has an empty template so it wont actually clutter things up in our app. What are some other things we often do with events? How about stop propagation? Why not add a boolean attribute to `event-listener` so we could set this up along with the listener?
@@ -164,6 +166,8 @@ Notice that it has an empty template so it wont actually clutter things up in ou
         }.bind(this))
       }
     });
+  </script>
+</dom-module>
 {% endhighlight %}
 
 Now to take our new `<event-listener>` listener for a spin. Lets a few more.
@@ -180,6 +184,10 @@ Now to take our new `<event-listener>` listener for a spin. Lets a few more.
       is: 'some-component',
 
       onPropertyChanged: function (e) {},
+
+      onPropertyRequested: function (e) {},
+
+      onActivityOpened: function (e) {} 
     });
   </script>
 </dom-module>
@@ -187,4 +195,4 @@ Now to take our new `<event-listener>` listener for a spin. Lets a few more.
 
 Nice and easy. Hey look at that, we can even add a description as the textContent of an `<event-listener>`. Could be nice to know which listener is firing (never quite know who's listening with events sometimes) or even explain how things work a little better. From here it would trivial to aggregate all listeners along with their descriptions, handlers, and hosts to get an overview of just what the hell is going on when there are all these events flying all over the place. Might be nice.
 
-Setting up your subscriptions like this is easy and keeps the glue out of your code. You won't forget to unsubscribe because you wrote the code to setup the listener the right way once and can take advantage of this every time you throw down a new listener. Instead of writing how you want set up a listener by adding it and removing it during certain component life-cycle events you simply state that you want an event called X handled by a method called Y.
+Setting up your subscriptions like this is easy and keeps the glue out of your code. You won't forget to unsubscribe because you wrote the code to setup the listener the right way once and can take advantage of this every time you throw down a new listener. Instead of writing how you want set up a listener by adding it and removing it during certain component life-cycle events you simply state that you want an event called X handled by a method called Y, declaratively.
