@@ -72,7 +72,7 @@ So what can be done to stave off the angst, stupid mistakes, and confusion? We a
 
 We could make `<event-listener>` set up the listener and never forget to remove it without failure or error. Other programmers could come along and throw down some more listeners without knowing how it worked; only that it did and it was needed. Perhaps these other programmers on your team are less experienced programmers. Building something like this not only potentiates your code, but the code of others who can stand on your shoulders and help get the job done.
 
-What might `event-listener` look like inside?
+What might `<event-listener>` look like inside?
 
 {% highlight html %}
 <dom-module id="event-listener">
@@ -103,7 +103,7 @@ What might `event-listener` look like inside?
           if (typeof methodToWrap === typeof Function()) {
             methodToWrap.apply(targetObject, arguments);
           }
-        }
+        };
       },
 
       detached: function () {
@@ -180,7 +180,7 @@ Now to take our new `<event-listener>` listener for a spin. Lets a few more.
       is: 'some-component',
 
       onPropertyChanged: function (e) {},
-    })
+    });
   </script>
 </dom-module>
 {% endhighlight %}
