@@ -48,9 +48,9 @@ A third thing happens. Our code is a little more muddy. Not hard to read, mind y
 
 Wouldn't it be nice if our component's methods were comprised mostly of actual logic that was unique? We would be able to scan through the code and begin understanding how things worked at a glance without having to wade through largely inert glue. 
 
-Now to be fair, Polymer does provide an idiom for this. This touches on another point which is that its also nice to keep weird framework/library specific stuff out of nice clean code as much as possible. Makes it easier for you to pack up and leave for another framework in the future and can even facilitate things like testing if your framework has a particularly shit testing story.
+Now to be fair, Polymer does provide an idiom for this. This touches on another point which is that its also nice to keep weird framework/library specific stuff out of nice clean code as much as possible. Makes it easier for you to pack up and leave for another framework in the future and can even facilitate things like testing if your framework has a particularly shit testing story. Another topic for another day.
 
-So what can be done to stave off the angst, stupid mistakes, and confusion? We automate the regular parts, thereby saving ourselves *from* ourselves, from our fat fingers and work declaratively. What if we could set up listeners like this:
+So what can be done to stave off the angst, stupid mistakes, and confusion? We automate the regular parts, thereby saving ourselves *from* ourselves, from our fat fingers, and work declaratively. What if we could set up listeners like this:
 
 {% highlight html %}
 <dom-module id="a-component">
@@ -193,6 +193,6 @@ Now to take our new `<event-listener>` listener for a spin. Lets add few more.
 </dom-module>
 {% endhighlight %}
 
-Nice and easy. Hey look at that, we can even add a description as the textContent of an `<event-listener>`. Could be nice to know which listener is firing (never quite know who's listening with events sometimes) or even explain how things work a little better. From here it would trivial to aggregate all listeners along with their descriptions, handlers, and hosts to get an overview of just what the hell is going on when there are all these events flying all over the place. Might be nice.
+Nice and easy. Hey look at that, we can even add a description as the textContent of an `<event-listener>`. Could be nice to know which listener is firing (never quite know who's listening with events sometimes) or even explain how things work a little better. From here it would be trivial to aggregate all listeners along with their descriptions, handlers, and hosts to get an overview of just what the hell is going on when there are all these events flying all over the place. Might be nice.
 
-Setting up your subscriptions like this is easy and keeps the glue out of your code. You won't forget to unsubscribe because you wrote the code to setup the listener the right way once and can take advantage of this every time you throw down a new listener. Instead of writing how you want set up a listener by adding it and removing it during certain component life-cycle events you simply state that you want an event called X handled by a method called Y, declaratively.
+Setting up your subscriptions like this is easy and keeps the glue out of your code. You won't forget to unsubscribe because you wrote the code to setup the listener the right way once and can take advantage of this every time you throw down a new listener. Instead of writing how you want to set up a listener by adding it and removing it during certain component life-cycle events you simply state that you want an event called X handled by a method called Y, declaratively.
