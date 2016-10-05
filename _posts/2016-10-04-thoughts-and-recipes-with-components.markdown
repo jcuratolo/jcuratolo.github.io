@@ -42,7 +42,7 @@ First we get tired of writing the same crap over and over again. Won't kill us. 
 
 Second, we expose ourselves to more mistakes because we are writing more and more code. Marco Pierre White, who was at one time the youngest chef to be awarded three Michelin stars, said something along the lines of "Perfection is many small things well." He is, of course, sort of a jerk sometimes and also right. This is important to us because if we do one thing wrong, mistype a single character, our entire program could crap out and therefore we ***require*** perfection in the pursuit of the elusive JavaScripts. Too bad for the whole being human thing.
 
-DRY isn't just about being lazy or even smart. Its also about reducing your codes exposure to your damn ***humanity***, the certainty with which you will make stupid mistakes and thus waste time and brain juice finding and fixing things that could have been avoided.
+DRY isn't just about being lazy or even smart. Its also about reducing your code's exposure to your damn ***humanity***, the certainty with which you will make stupid mistakes and thus waste time and brain juice finding and fixing things that could have been avoided.
 
 A third thing happens. Our code is a little more muddy. Not hard to read, mind you, but somewhat less clear since **glue code** is co-located with code that actually describes something useful and unique: Real-Deal Logic. One of my favorite things after beef and mountains.
 
@@ -50,7 +50,7 @@ Wouldn't it be nice if our component's methods were comprised mostly of actual l
 
 Now to be fair, Polymer does provide an idiom for this. This touches on another point which is that its also nice to keep weird framework/library specific stuff out of nice clean code as much as possible. Makes it easier for you to pack up and leave for another framework in the future and can even facilitate things like testing if your framework has a particularly shit testing story.
 
-So what can be done to stave off the angst, stupid mistakes, and confusion? We automate the regular parts thereby saving ourselves from our fat fingers and work declaratively. What if we could set up listeners like this:
+So what can be done to stave off the angst, stupid mistakes, and confusion? We automate the regular parts, thereby saving ourselves *from* ourselves, from our fat fingers and work declaratively. What if we could set up listeners like this:
 
 {% highlight html %}
 <dom-module id="a-component">
