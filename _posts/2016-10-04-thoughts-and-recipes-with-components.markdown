@@ -4,13 +4,7 @@ title:  "Thoughts And Recipes With Components"
 date:   2016-10-04 23:35:49 -0700
 categories: recipes components ui
 ---
-Component based UIs offer a clean and powerful way to construct UIs quickly and reliably. This is the first in a series of posts that will share thoughts and recipes I've used in building component based UIs. The recipes should be applicable to any component driven framework though I'll be using Polymer for the purposes of demonstration.
-
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
+Component based UIs offer a clean and powerful way to construct UIs quickly and reliably. This is the first in a series of posts that will share thoughts and related recipes for building component based UIs. The recipes should be applicable to any component driven framework though I'll be using Polymer for the purposes of demonstration.
 
 {% highlight ruby %}
 def print_hi(name)
