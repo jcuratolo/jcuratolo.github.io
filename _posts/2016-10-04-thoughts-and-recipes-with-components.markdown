@@ -170,7 +170,7 @@ Notice that it has an empty template so it wont actually clutter things up in ou
 </dom-module>
 {% endhighlight %}
 
-Now to take our new `<event-listener>` listener for a spin. Lets a few more.
+Now to take our new `<event-listener>` listener for a spin. Lets add few more.
 
 {% highlight html %}
 <dom-module id="some-component">
