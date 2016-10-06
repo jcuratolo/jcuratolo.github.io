@@ -40,7 +40,7 @@ Consider the simple component defined below. In order to add event listeners we 
 
 First we get tired of writing the same crap over and over again. Won't kill us. We've had worse. 
 
-Second, we expose ourselves to more mistakes because we are writing more and more code. Marco Pierre White, who was at one time the youngest chef to be awarded three Michelin stars, said something along the lines of "Perfection is many small things well." He is, of course, sort of a jerk sometimes and also right. This is important to us because if we do one thing wrong, mistype a single character, our entire program could crap out and therefore we ***require*** perfection in the pursuit of the elusive JavaScripts. Too bad for the whole being human thing.
+Second, we expose ourselves to more mistakes because we are writing more and more code. Marco Pierre White, who was at one time the youngest chef to be awarded three Michelin stars, said something along the lines of "Perfection is many small things done well." He is, of course, sort of a jerk sometimes and also right. This is important to us because if we do one thing wrong, mistype a single character, our entire program could crap out and therefore we ***require*** perfection in the pursuit of the elusive JavaScripts. Too bad for the whole being human thing.
 
 DRY isn't just about being lazy or even smart. Its also about reducing your code's exposure to your damn ***humanity***, the certainty with which you will make stupid mistakes and thus waste time and brain juice finding and fixing things that could have been avoided.
 
