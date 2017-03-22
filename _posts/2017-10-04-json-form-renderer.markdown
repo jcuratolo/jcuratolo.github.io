@@ -151,6 +151,6 @@ Now we can throw down forms quick and easy. These JSON form definitions could be
     <json-form-renderer json-form="[[ jsonForm ]]"></json-form-renderer>
 {% endhighlight %}
 
-In Polymer {{ }} indicates two way binding. It's fine. It's not an antipattern. Don't get me started. [[ ]] is a one way binding down into the form renderer. As soon as the request finishes and changes the value of jsonForm the bindings will propagate the change downard to <json-form-renderer> who will begin rendering the form.
+In Polymer \{\{ \}\} indicates two way binding. It's fine. It's not an antipattern. Don't get me started. [[ ]] is a one way binding down into the form renderer. As soon as the request finishes and changes the value of jsonForm the bindings will propagate the change downard to <json-form-renderer> who will begin rendering the form.
 
 
