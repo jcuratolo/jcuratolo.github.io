@@ -18,7 +18,7 @@ At the minimum, all we need to layout a form are the form name, the fields, and 
 {% highlight JSON %}
 {
     "name": "loginForm",
-    "fields: [
+    "fields": [
         {
             "id": "username",
             "type": "text",
@@ -145,7 +145,7 @@ Now we can throw down forms quick and easy. These JSON form definitions could be
     <ajax-request 
         method="GET" 
         url="forms/loginForm" 
-        last-response="{{ jsonForm }}">
+        last-response="/{/{ jsonForm /}/}">
     </ajax-request>
 
     <json-form-renderer json-form="[[ jsonForm ]]"></json-form-renderer>
